@@ -26,7 +26,7 @@ public class LabAvtivity4 {
             System.out.println("Not all numbers are equal.");
         }
 
-            scan.close()
+            scan.close();
 	}	
 
 
