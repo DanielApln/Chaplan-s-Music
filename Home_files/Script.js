@@ -32,7 +32,7 @@ productContainers.forEach((item, i) => {
     })
 })
 
-//slider feature 
+// Slider feature
 let slideIndex = 1;
 showSlides(slideIndex);
 
