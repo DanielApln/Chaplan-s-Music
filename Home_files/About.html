@@ -6,20 +6,26 @@
     <meta name="description" content="Learn about Chaplan's Music Emporium, your ultimate online boutique for musical instruments. Discover our story, products, and why music lovers choose us.">
     <meta name="keywords" content="musical instruments, music store, guitars, keyboards, drums, music accessories, online music shop">
     <title>About - Chaplan's Music Emporium</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
     <link rel="stylesheet" href="Main.css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar sticky">
         <div class="navdiv">
-            <div class="logo"><a href="Home.html">Chaplan's Music Emporium</a></div>
+          <div class="logo"><a href="Home.html">Chaplan's Music Emporium</a></div>
+          <ul class="nav-links">
+            <li><a href="Home.html" class="ripple">Home</a></li>
+            <li><a href="Product.html" class="ripple">Product</a></li>
+            <li><a href="About.html" class="ripple">About</a></li>
+            <li><a href="Contact.html" class="ripple">Contact</a></li>
+            <li><a href="Cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+          </ul>
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
-        <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="Product.html">Products</a></li>
-            <li><a href="About.html">About</a></li>
-            
-        </ul>
-    </nav>
+      </nav>
 
     <main>
         <div class="about-section-wrapper">
@@ -37,23 +43,25 @@
                 </div>
             </div>
         </div>
-        <div class="about-section-wrapper">
+        <div class="about-section-wrapper offer-section">
             <div class="about-section right-align">
-                <div class="about-description">
+                <div class="about-description offer-description">
                     <h2>What We Offer</h2>
                     <p>We offer a comprehensive range of musical instruments, including:</p>
-                    <ul>
-                        <li>Guitars - electric, acoustic, bass</li>
-                        <li>Keyboards and pianos</li>
-                        <li>Drums and percussion</li>
-                        <li>String instruments - violins, cellos, etc.</li>
-                        <li>Wind instruments - flutes, clarinets, etc.</li>
-                        <li>Accessories - strings, picks, cases, etc.</li>
-                    </ul>
+                    <div class="offer-list-container">
+                        <ul class="offer-list">
+                            <li>Guitars - electric, acoustic, bass</li>
+                            <li>Keyboards and pianos</li>
+                            <li>Drums and percussion</li>
+                            <li>String instruments - violins, cellos, etc.</li>
+                            <li>Wind instruments - flutes, clarinets, etc.</li>
+                            <li>Accessories - strings, picks, cases, etc.</li>
+                        </ul>
+                    </div>
                     <p>In addition to products, we provide services such as instrument repair, music lessons, and equipment rental.</p>
-                    <a href="Product.html" class="button">Browse Our Products</a>
+                    <a href="Product.html" class="button offer-button">Browse Our Products</a>
                 </div>
-                <img src="images/8b1ce1d5bdc6b1b8af4df84e5082604f.jpg" alt="Featured Instruments" class="about-image">
+                <img src="images/8b1ce1d5bdc6b1b8af4df84e5082604f.jpg" alt="Featured Instruments" class="about-image offer-image">
             </div>
         </div>
         <div class="about-section-wrapper">
@@ -76,10 +84,18 @@
             </div>
         </div>
         <div class="about-section-wrapper">
-            <div class="about-section">
+            <div class="about-section testimonial-section">
                 <h2>Customer Testimonials</h2>
-                <blockquote>"Chaplan's Music Emporium has been my go-to store for years. The staff is incredibly helpful, and the selection is unbeatable." - Jane Doe</blockquote>
-                <blockquote>"I love the online shopping experience. It's easy to navigate, and the product descriptions are very detailed." - John Smith</blockquote>
+                <div class="testimonial-container">
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">"Chaplan's Music Emporium has been my go-to store for years. The staff is incredibly helpful, and the selection is unbeatable."</p>
+                        <p class="testimonial-author">— Jane Doe</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">"I love the online shopping experience. It's easy to navigate, and the product descriptions are very detailed."</p>
+                        <p class="testimonial-author">— John Smith</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="about-section-wrapper">
@@ -99,40 +115,49 @@
 
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <p>Your trusted music store providing quality instruments and equipment since 2024.</p>
+          <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>Your trusted music store providing quality instruments and equipment since 2024.</p>
+            <a href="About.html" class="footer-cta">Learn More</a>
+          </div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="Product.html">Products</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Privacypolicy.html">Privacy Policy</a></li>
+              <li><a href="terms&service.html">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Info</h3>
+            <ul class="footer-contact">
+              <li><i class="fas fa-phone"></i> +123 456 7890</li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:info@chaplan.com">info@chaplan.com</a></li>
+              <li><i class="fas fa-map-marker-alt"></i> 123 Music Street, City</li>
+            </ul>
+          </div>
+          <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <p>Stay updated with our latest offers and news!</p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="Enter your email" />
+              <button type="button">Subscribe</button>
             </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="Product.html">Products</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/daniel.aplan.9" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+              <a href="https://www.instagram.com/dniel_apln/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+              <a href="#" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
             </div>
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <ul class="footer-contact">
-                    <li><i class="fas fa-phone"></i> +123 456 7890</li>
-                    <li><i class="fas fa-envelope"></i> info@chaplan.com</li>
-                    <li><i class="fas fa-map-marker-alt"></i> 123 Music Street, City</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/daniel.aplan.9" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="https://www.instagram.com/dniel_apln/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                    <a href="#" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
-                </div>
-            </div>
+          </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2024 Chaplan's Music. All rights reserved.</p>
+          <p>© 2025 Chaplan's Music Emporium. All rights reserved.</p>
         </div>
-    </footer>
+      </footer>
 </body>
 </html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Chaplan's Music Emporium for inquiries about musical instruments, orders, or support. Reach us via form, phone, or email.">
+    <meta name="keywords" content="contact music store, musical instruments support, music shop contact, Chaplan's Music Emporium contact">
+    <title>Contact - Chaplan's Music Emporium</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Main.css">
+    <!-- Font Awesome for icons -->
+</head>
+<style>
+ 
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f0faff, #ffffff);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: var(--color-text);
+  opacity: 0.8;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-form h3,
+.contact-info h3 {
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.contact-btn {
+  padding: 12px 30px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+  background: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.contact-details i {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin-right: 15px;
+}
+
+.contact-details a {
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: var(--color-accent);
+}
+
+.contact-map {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Typography */
+  :root {
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.5rem;
+    --font-size-h3: 1.125rem;
+    --font-size-base: 15px;
+  }
+
+
+
+  /* Contact Section */
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-form h3,
+  .contact-info h3 {
+    text-align: center;
+  }
+
+  .contact-map {
+    height: 200px;
+  }
+
+
+@media (max-width: 480px) {
+  /* Typography */
+  :root {
+    --font-size-h1: 1.75rem;
+    --font-size-h2: 1.25rem;
+    --font-size-h3: 1rem;
+    --font-size-base: 14px;
+  }
+
+  /* Navbar */
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-details li {
+    font-size: 1rem;
+  }
+
+  .contact-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+}
+</style>
+<body>
+    <nav class="navbar sticky">
+        <div class="navdiv">
+            <div class="logo"><a href="Home.html">Chaplan's Music Emporium</a></div>
+            <ul class="nav-links">
+                <li><a href="Home.html" class="ripple">Home</a></li>
+                <li><a href="Product.html" class="ripple">Product</a></li>
+                <li><a href="About.html" class="ripple">About</a></li>
+                <li><a href="Contact.html" class="ripple">Contact</a></li>
+                <li><a href="Cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us via the form below or through our contact details.</p>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="contact-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+123 456 7890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:info@chaplan.com">info@chaplan.com</a></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Music Street, City</span>
+                        </li>
+                    </ul>
+                    <div class="contact-map">
+                        <!-- Placeholder for Google Maps; replace with actual embed code -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537363153167!3d-37.81627977975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727e4b3b3b3b3b!2s123%20Music%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Your trusted music store providing quality instruments and equipment since 2024.</p>
+                <a href="About.html" class="footer-cta">Learn More</a>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Privacypolicy.html">Privacy Policy</a></li>
+                    <li><a href="terms&service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@chaplan.com">info@chaplan.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Music Street, City</li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest offers and news!</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" />
+                    <button type="button">Subscribe</button>
+                </div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/daniel.aplan.9" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://www.instagram.com/dniel_apln/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Chaplan's Music Emporium. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

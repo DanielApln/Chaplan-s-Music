@@ -5,16 +5,20 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Home</title>
     <link href="Main.css" rel="stylesheet" type="text/css" />
-    <nav class="navbar">
-        <div class="navdiv">
-            <div class="logo"><a href="Home.html">Chaplan's Music Emporium</a></div>
+    <nav class="navbar sticky">
+      <div class="navdiv">
+        <div class="logo"><a href="Home.html">Chaplan's Music Emporium</a></div>
+        <ul class="nav-links">
+          <li><a href="Home.html" class="ripple">Home</a></li>
+          <li><a href="Product.html" class="ripple">Product</a></li>
+          <li><a href="About.html" class="ripple">About</a></li>
+          <li><a href="Contact.html" class="ripple">Contact</a></li>
+          <li><a href="Cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
         </div>
-      <ul>
-        <li><a href="Home.html">Home</a></li>
-        <li><a href="Product.html">Product</a></li>
-        <li><a href="About.html">About</a></li>
-        
-      </ul>
+      </div>
     </nav>
   </head>
   <body>
@@ -627,116 +631,41 @@
     </section>
     <br />
     <br />
-    <section style="position: relative">
-      <section class="product-second">
-        <h2 class="product-category">best selling</h2>
-        <button class="pre-btn-second" title="Previous" type="button">
-          <img alt="Previous" src="images/arrow.png" />
-        </button>
-        <button class="nxt-btn-second" title="Next" type="button">
-          <img alt="Next" src="images/arrow.png" />
-        </button>
-        <div class="product-container-second">
-          <div class="product-card">
-            <div class="product-image">
-              <span class="discount-tag">10% off</span>
-              <img alt="" class="product-thumb" src="images/6521430cv12d.png" />
-              <button class="card-btn">add to wishlist</button>
-            </div>
-            <div class="product-info">
-              <h2 class="product-brand">brand</h2>
-              <p class="product-short-description">Available color: Sunburst</p>
-              <span class="price">₱10421</span><span class="actual-price">₱11579</span>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <span class="discount-tag">30% off</span>
-              <img alt="" class="product-thumb" src="images/6521430cv12d.png" />
-              <button class="card-btn">add to wishlist</button>
-            </div>
-            <div class="product-info">
-              <h2 class="product-brand">brand</h2>
-              <p class="product-short-description">Available color: Blue</p>
-              <span class="price">₱2238</span><span class="actual-price">₱3198</span>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <span class="discount-tag">40% off</span>
-              <img alt="" class="product-thumb" src="images/6521430cv12d.png" />
-              <button class="card-btn">add to wishlist</button>
-            </div>
-            <div class="product-info">
-              <h2 class="product-brand">brand</h2>
-              <p class="product-short-description">Available color: Natural</p>
-              <span class="price">₱3865</span><span class="actual-price">₱6442</span>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <span class="discount-tag">10% off</span>
-              <img alt="" class="product-thumb" src="images/6521430cv12d.png" />
-              <button class="card-btn">add to wishlist</button>
-            </div>
-            <div class="product-info">
-              <h2 class="product-brand">brand</h2>
-              <p class="product-short-description">Available color: Gold</p>
-              <span class="price">₱3795</span><span class="actual-price">₱4217</span>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <span class="discount-tag">40% off</span>
-              <img alt="" class="product-thumb" src="images/6521430cv12d.png" />
-              <button class="card-btn">add to wishlist</button>
-            </div>
-            <div class="product-info">
-              <h2 class="product-brand">brand</h2>
-              <p class="product-short-description">Available color: Sunburst</p>
-              <span class="price">₱4391</span><span class="actual-price">₱7319</span>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <span class="discount-tag">50% off</span>
-              <img alt="" class="product-thumb" src="images/6521430cv12d.png" />
-              <button class="card-btn">add to wishlist</button>
-            </div>
-            <div class="product-info">
-              <h2 class="product-brand">brand</h2>
-              <p class="product-short-description">Available color: Natural</p>
-              <span class="price">₱1249</span><span class="actual-price">₱2498</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
+   
     <script src="Script.js"></script>
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer-section">
+        <div class="footer-section about">
           <h3>About Us</h3>
           <p>Your trusted music store providing quality instruments and equipment since 2024.</p>
+          <a href="About.html" class="footer-cta">Learn More</a>
         </div>
-        <div class="footer-section">
+        <div class="footer-section links">
           <h3>Quick Links</h3>
           <ul class="footer-links">
             <li><a href="Home.html">Home</a></li>
             <li><a href="Product.html">Products</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="terms&service.html">Terms of Service</a></li>
           </ul>
         </div>
-        <div class="footer-section">
+        <div class="footer-section contact">
           <h3>Contact Info</h3>
           <ul class="footer-contact">
             <li><i class="fas fa-phone"></i> +123 456 7890</li>
-            <li><i class="fas fa-envelope"></i> info@chaplan.com</li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@chaplan.com">info@chaplan.com</a></li>
             <li><i class="fas fa-map-marker-alt"></i> 123 Music Street, City</li>
           </ul>
         </div>
-        <div class="footer-section">
+        <div class="footer-section newsletter">
+          <h3>Newsletter</h3>
+          <p>Stay updated with our latest offers and news!</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="button">Subscribe</button>
+          </div>
           <h3>Follow Us</h3>
           <div class="social-links">
             <a href="https://www.facebook.com/daniel.aplan.9" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
@@ -747,7 +676,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2024 Chaplan's Music. All rights reserved.</p>
+        <p>© 2025 Chaplan's Music Emporium. All rights reserved.</p>
       </div>
     </footer>
   </body>
